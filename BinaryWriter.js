@@ -23,6 +23,18 @@ class BinaryWriter {
     this.offset += 1;
   }
 
+  writeShort(value) {
+    this.ensure(2);
+    this.buffer.writeInt16LE(value, this.offset);
+    this.offset += 2;
+  }
+
+  writeUShort(value) {
+    this.ensure(2);
+    this.buffer.writeUInt16LE(value, this.offset);
+    this.offset += 2;
+  }
+
   writeInt(value) {
     this.ensure(4);
     this.buffer.writeInt32LE(value, this.offset);

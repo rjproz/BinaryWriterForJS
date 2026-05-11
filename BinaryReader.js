@@ -16,6 +16,18 @@ class BinaryReader {
     return val;
   }
 
+  readShort() {
+    const val = this.buffer.readInt16LE(this.offset);
+    this.offset += 2;
+    return val;
+  }
+
+  readUShort() {
+    const val = this.buffer.readUInt16LE(this.offset);
+    this.offset += 2;
+    return val;
+  }
+
   readInt() {
     const val = this.buffer.readInt32LE(this.offset);
     this.offset += 4;
