@@ -1,6 +1,6 @@
 {
   "name": "@rjproz/binary-writer-pool.js",
-  "version": "1.0.5",
+  "version": "1.2.0",
   "description": "Binary reader/writer with object pooling, C#-style naming",
   "main": "index.js",
   "repository": {

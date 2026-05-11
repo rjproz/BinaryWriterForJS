@@ -64,6 +64,10 @@ class BinaryReader {
     this.offset += length;
     return str;
   }
+
+  getRemainingBuffer() {
+    return this.buffer.subarray(this.offset);
+  }
 }
 
 module.exports = BinaryReader;

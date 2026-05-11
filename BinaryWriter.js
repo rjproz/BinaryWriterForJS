@@ -73,6 +73,12 @@ class BinaryWriter {
     this.offset += strBuf.length;
   }
 
+  writeBuffer(buf) {
+    this.ensure(buf.length);
+    buf.copy(this.buffer, this.offset);
+    this.offset += buf.length;
+  }
+
   getBuffer() {
     return this.buffer.subarray(0, this.offset);
   }
