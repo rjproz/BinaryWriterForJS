@@ -1,0 +1,20 @@
+{
+  "name": "@rjproz/binary-writer-pool.js",
+  "version": "1.0.3",
+  "description": "Binary reader/writer with object pooling, C#-style naming",
+  "main": "index.js",
+  "author": "Rajkumar Pramanik <rjproz@gmail.com>",
+  "license": "MIT",
+
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "binary",
+    "reader",
+    "writer",
+    "pool",
+    "buffer",
+    "networking"
+  ]
+}
